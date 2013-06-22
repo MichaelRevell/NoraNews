@@ -23,6 +23,15 @@
     <%= f.label :funding_goal %><br />
     <%= f.number_field :funding_goal %>
   </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+  </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>

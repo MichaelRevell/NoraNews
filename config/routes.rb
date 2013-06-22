@@ -1,8 +1,10 @@
 Noranews::Application.routes.draw do
 
   resources :stories
+  resources :users
 
-  devise_for :users, :path => '', :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock', :registration => 'register', :sign_up => 'signup' }
+  devise_for :users, :path => '', :path_names => { :sign_in => 'login', :sign_out => 'logout', :password => 'secret', :confirmation => 'verification', :unlock => 'unblock', :registration => 'register', :sign_up => 'signup' },
+    :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   get "home/index"
   root :to => "home#index"

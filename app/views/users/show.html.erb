@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+
+<h5>My stories:</h5>
+<% @stories.each do |s| %>
+	<strong><%= link_to s.title, s %><br></strong>
+	<%= s.description %><br><br>
+<% end %>
+
+<br>
+<br>
+<br>
+
+<%= link_to "Create a new story!", new_story_path %>

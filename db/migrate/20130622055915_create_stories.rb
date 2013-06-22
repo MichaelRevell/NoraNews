@@ -8,6 +8,8 @@ class CreateStories < ActiveRecord::Migration
       t.string :description
       t.integer :user_id # id for owner user
 
+      t.boolean :funding_complete, :default => false
+
       t.timestamps
     end
   end

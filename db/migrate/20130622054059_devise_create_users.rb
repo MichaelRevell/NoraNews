@@ -19,6 +19,19 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
 
+      # For OAuth
+      t.string :provider
+      t.string :uid
+      t.string :name
+
+      t.string :first_name
+      t.string :last_name
+      t.string :image
+      t.string :location
+
+      t.string :gender
+      t.string :bio
+
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at
@@ -33,7 +46,6 @@ class DeviseCreateUsers < ActiveRecord::Migration
       ## Token authenticatable
       # t.string :authentication_token
 
-      t.string :bio
 
       t.timestamps
     end
