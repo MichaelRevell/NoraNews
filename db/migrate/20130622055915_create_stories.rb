@@ -5,6 +5,9 @@ class CreateStories < ActiveRecord::Migration
       t.integer :funding_current
       t.integer :funding_goal
 
+      t.string :description
+      t.integer :user_id # id for owner user
+
       t.timestamps
     end
   end

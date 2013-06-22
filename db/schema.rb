@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20130622055915) do
     t.string   "title"
     t.integer  "funding_current"
     t.integer  "funding_goal"
+    t.string   "description"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end
