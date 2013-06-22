@@ -1,6 +1,10 @@
 Noranews::Application.routes.draw do
 
+  resources :stories
+
+
   root to: 'main#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

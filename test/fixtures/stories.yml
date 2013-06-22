@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  funding_current: 1
+  funding_goal: 1
+
+two:
+  title: MyString
+  funding_current: 1
+  funding_goal: 1
